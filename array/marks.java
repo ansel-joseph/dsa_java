@@ -9,8 +9,14 @@ public class marks {
             System.out.print("Enter the value for index " + i + ": ");
             array[i]=sc.nextInt();
         }
+        System.out.println("Enter the element to be found: ");
+        int x = sc.nextInt();
+        
         for(int i=0;i<size;i++){
-            System.out.print(array[i]+" ");
+            if(array[i]==x){
+                System.out.println("Element found at index: " + i);
+                break;
+            }
         }
 
     }
