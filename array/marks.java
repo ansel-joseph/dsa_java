@@ -1,9 +1,16 @@
+import java.util.*;
 public class marks {
     public static void main(String[] args) {
-        int[] marks = {78, 90, 69};
-
-        for (int i = 0; i< 3; i++){
-            System.out.println(marks[i]);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements: ");
+        int size = sc.nextInt();
+        int array[]= new int[size];
+        for(int i=0; i<size; i++){
+            System.out.print("Enter the value for index " + i + ": ");
+            array[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+            System.out.print(array[i]+" ");
         }
 
     }
