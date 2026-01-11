@@ -1,7 +1,9 @@
 public class str {
     public static void main(String args[]){
-        String str1 = "Bruce";
-        String str2 = "Wayne";
-        System.out.println(str1 + " " + str2); //concatenation
+        String firstName = "Bruce";
+        String lastName = "Wayne";
+        String fullName = firstName + " " + lastName; //string concatenation
+        System.out.println(fullName);
+        System.out.println(fullName.length()); //string length
     }
 }
